@@ -295,6 +295,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: default;
 }
 .explore__button{
     font-size: 16px;
@@ -308,9 +309,63 @@ h2 {
 
 .explore__button:hover {
   background-color: #8c59f4;
+  cursor: no-drop;
 }
 
 .explore__button:active {
   transform: translateY(1px) scale(0.9);
   background-color: #5631a2;
+}
+
+/*footer*/
+footer{
+    background-color: rgb(50, 50, 50);
+}
+
+.footer__container{
+    display: flex;
+    justify-content: center;
+    padding: 36px;
+    text-align: center;
+}
+
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.footer__logo--img{
+    width: 180px;
+    filter: grayscale(1) invert(1);
+}
+
+.footer__links{
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: white;
+    padding: 0 12px;
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+    cursor: no-drop;
+}
+
+.footer__link:active{
+    color: #8c59f4;
+}
+
+.footer__copyright{
+    color: white;
+}
+
+.footer__copyright:hover{
+    cursor: default;
 }
