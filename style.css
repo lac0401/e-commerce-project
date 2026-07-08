@@ -269,13 +269,13 @@ h2 {
 
 .highlight__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 .highlight {
   padding: 0 24px;
   width: calc(100% / 3);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -295,6 +295,7 @@ h2 {
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .highlight__para {
@@ -449,4 +450,32 @@ footer {
     .btn__menu{
         display: block;
     }
+}
+
+/*Small Phones, Tablets, Large Smartphones*/
+@media (max-width: 768px){
+.header__description{
+    padding: 0 24px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+button{
+   font-size: 16px;
+}
+
+.book {
+    width: 50%;
+}
+
+.highlight{
+    width: 100%;
+}
+
 }
