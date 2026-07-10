@@ -47,7 +47,7 @@ body {
 }
 
 .text--purple {
-  color: #7342d6;
+  color: #268726;
 }
 
 .no-cursor {
@@ -71,6 +71,7 @@ nav {
 
 .logo {
   width: 160px;
+  filter: grayscale(1) 
 }
 
 .nav__links {
@@ -85,7 +86,11 @@ nav {
   text-decoration: none;
   margin-left: 8px;
   font-weight: bold;
-  color: #7342d6;
+  color: #268726;
+}
+
+.nav__link--n{
+  cursor: no-drop;
 }
 
 .nav__link:hover {
@@ -93,22 +98,22 @@ nav {
 }
 
 .nav__link--primary {
-  border: 2px solid #7342d6;
+  border: 2px solid #268726;
   border-radius: 4px;
   transition: all 200ms ease;
 }
 
 .nav__link--primary:hover {
-  background-color: #7342d6;
+  background-color: #268726;
   color: white;
 }
 
 .nav__link--primary:active {
-  background-color: #8c59f4;
+  background-color: #2ca02c
 }
 
 #landing {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: rgba(66, 214, 78, 0.063);
 }
 
 /* Burger Menu */
@@ -117,7 +122,7 @@ nav {
   font-size: 40px;
   text-align: center;
   border: none;
-  color: #7342d6;
+   color: #268726;
   display: none;
 }
 
@@ -196,7 +201,7 @@ h1 {
   text-align: center;
   font-size: 48px;
   margin-bottom: 24px;
-  color: #7342d6;
+  color: #268726;
 }
 
 h2 {
@@ -208,21 +213,21 @@ h2 {
 .header__description--btn {
   margin-bottom: 24px;
   font-size: 16px;
-  border: 2px solid #5631a2;
+  border: 2px solid #237e23;
   border-radius: 4px;
-  background-color: #7342d6;
+  background-color: #268726;
   color: white;
   padding: 4px;
   transition: all 300ms ease;
 }
 
 .header__description--btn:hover {
-  background-color: #8c59f4;
+  background-color: #2ca02c;
 }
 
 .header__description--btn:active {
   transform: translateY(1px) scale(0.9);
-  background-color: #5631a2;
+  background-color: #268726;
 }
 
 .header__img--wrapper {
@@ -277,6 +282,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .highlight__img {
@@ -286,8 +292,8 @@ h2 {
   width: 100px;
   height: 100px;
   font-size: 32px;
-  color: #7342d6;
-  border: 2px solid #7342d66e;
+  color: #268726;
+  border: 2px solid #268726;
   border-radius: 4px;
   margin-bottom: 24px;
 }
@@ -305,7 +311,7 @@ h2 {
 
 /*features*/
 #features {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: rgba(66, 214, 78, 0.063);
   padding-top: 8vw;
 }
 
@@ -360,7 +366,7 @@ h2 {
 /*Explore*/
 
 #explore {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: rgba(66, 214, 78, 0.063);
 }
 
 .explore__section {
@@ -372,21 +378,22 @@ h2 {
 }
 .explore__button {
   font-size: 16px;
-  border: 2px solid #5631a2;
+  border: 2px solid #237b23;
   border-radius: 4px;
-  background-color: #7342d6;
+  background-color: #268726;
   color: white;
   padding: 4px;
   transition: all 300ms ease;
 }
 
 .explore__button:hover {
-  background-color: #8c59f4;
+  background-color: #2ca02c;
+  cursor: no-drop;
 }
 
 .explore__button:active {
   transform: translateY(1px) scale(0.9);
-  background-color: #5631a2;
+  background-color: #237b23;
 }
 
 /*footer*/
@@ -419,7 +426,8 @@ footer {
   justify-content: space-between;
 }
 
-.footer__link {
+.footer__link ,
+.footer__link--n{
   text-decoration: none;
   color: white;
   padding: 0 12px;
@@ -427,11 +435,15 @@ footer {
 
 .footer__link:hover {
   text-decoration: underline;
+}
+
+.footer__link--n:hover{
+  text-decoration: underline;
   cursor: no-drop;
 }
 
 .footer__link:active {
-  color: #8c59f4;
+  color: #237b23;
 }
 
 .footer__copyright {
